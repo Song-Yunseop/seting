@@ -15,4 +15,4 @@ npm i -g nodemon(글로벌설치)
 
 npx nodemon app.js
 ```
-
+rust api 알아보기
