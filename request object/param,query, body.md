@@ -4,8 +4,7 @@ Request 객체는 API를 컨트롤하기 위한 메소드를 셋 담고 있다.
 ```
 param
 query
-body
-이다
+body 이다.
 ```
 ```
 1. req.param
