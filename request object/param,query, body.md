@@ -15,6 +15,7 @@ body
 2. req.query
 주소 바깥, ? 이후의 변수를 담는다. 예를 들어 https://okky.com/post?q=Node.js 일 경우 Node.js를 담는다
 ```
+```
 3. req.body
 XML, JSON, Multi Form 등의 데이터를 담는다. 당연히 주소에선 확인할 수 없다.
 ```
