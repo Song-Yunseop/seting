@@ -16,6 +16,8 @@ vim .env
 
 node app.js
 
+git pull
+
 무중단
 npm install -g pm2@latest
 sudo npm i -g pm2
@@ -23,6 +25,7 @@ sudo npm i -g pm2
 sudo pm2 start app.js(서버 열기)
 sudo pm2 ps(열려있는 서버 확인)
 sudo pm2 delete 0(서버 닫기)
+sudo pm2 restart app.js(서버 다시시작하기)
 ```
 ```
 CI/CD
