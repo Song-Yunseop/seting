@@ -1,4 +1,6 @@
-```
+# 깃 브랜치 생성 및 충돌 해결방법
+
+```bash
 git checkout main
 git pull
 git checkout (자기브랜치)
