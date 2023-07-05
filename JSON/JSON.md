@@ -1,4 +1,5 @@
-JSON (JavaScript Object Notation)</br>
+# JSON (JavaScript Object Notation)
+
 JavaScript Object Notation라는 의미의 축약어로 데이터를 저장하거나 전송할 때 많이 사용되는 경량의 DATA 교환 형식</br>
 Javascript에서 객체를 만들 때 사용하는 표현식을 의미한다.</br>
 JSON 표현식은 사람과 기계 모두 이해하기 쉬우며 용량이 작아서, 최근에는 JSON이 XML을 대체해서 데이터 전송 등에 많이 사용한다.</br>
@@ -19,7 +20,8 @@ XML</br>
 JSON</br>
 태그로 표현하기 보다는 중괄호({}) 같은 형식으로 하고, 값을 ','로 나열하기에 그 표현이 간단하다.</br>
 JSON 문법
-```
+
+```json
 {
   "employees": [
     {
@@ -37,14 +39,17 @@ JSON 문법
   ]
 }
 ```
+
 JSON 형식은 자바스크립트 객체와 마찬가지로 key / value가 존재할 수 있으며 key값이나 문자열은 항상 쌍따옴표를 이용하여 표기해야한다.</br>
 객체, 배열 등의 표기를 사용할 수 있다.</br>
 일반 자바스크립트의 객체처럼 원하는 만큼 중첩시켜서 사용할 수도 있다.</br>
 JSON형식에서는 null, number, string, array, object, boolean을 사용할 수 있다.</br>
 JSON 형식
+
 1. name-value형식의 쌍
 여러가지 언어들에서 object등으로 실현되었다.
-```
+
+```json
 { String key : String value }
 {
   "firstName": "Kwon",
@@ -52,9 +57,11 @@ JSON 형식
   "email": "kyoje11@gmail.com"
 }
 ```
+
 2. 값들의 순서화된 리스트 형식
 여러가지 언어들에서 배열(Array) 등으로 실현되었다.
-```
+
+```json
 [value1, value2, ...]
 {
   "firstName": "Kwon",
@@ -63,6 +70,7 @@ JSON 형식
   "hobby": ["puzzles","swimming"]
 }
 ```
+
 JSON의 문제점</br>
 AJAX 는 단순히 데이터만이 아니라 JavaScript 그 자체도 전달할 수 있다. 이 말은 JSON데이터라고 해서 받았는데 단순 데이터가 아니라 JavaScript가 될 수도 있고, 그게 실행 될 수 있다는 것이다. (데이터인 줄 알고 받았는데 악성 스크립트가 될 수 있다.)</br>
 
@@ -76,7 +84,8 @@ JSON으로 가져올 수 있는 데이터는 해당 자바스크립트가 로드
 JSON은 단순히 데이터 포맷일 뿐이며 그 데이터를 불러오기 위해선 XMLHttpRequest()라는 JavaScript 함수를 사용해야 하는데 이 함수가 동일 서버에 대한 것만 지원하기 때문이다. ( JSONP 또는 프락시 역할을 하는 서버쪽 Script 파일로 가능하게도 할 수 있다.)</br>
 
 JSON 형식 텍스트를 JavaScript Object로 변환하기
-```
+
+```Ts
 var jsonText = '{ "name": "Someone else", "lastName": "Kim" }';  // JSON 형식의 문자열
 var realObject = JSON.parse(jsonText);
 var jsonText2 = JSON.stringify(realObject);
@@ -84,5 +93,6 @@ var jsonText2 = JSON.stringify(realObject);
 console.log(realObject);
 console.log(jsonText2);
 ```
+
 JSON.parse( JSON 형식의 문자열 ) : JSON 형식의 텍스트를 자바스크립트 객체로 변환한다.</br>
 JSON.stringify( JSON 형식의 문자열로 변환할 값 ) : 자바스크립트 객체를 JSON 텍스트로 변환한다.
